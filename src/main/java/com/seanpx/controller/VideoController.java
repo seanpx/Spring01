@@ -1,5 +1,7 @@
 package com.seanpx.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +13,7 @@ import java.util.*;
 public class VideoController {
 
     @RequestMapping("list")
+    //@GetMapping("list")
     public Object list(){
         Map<String,String> map = new LinkedHashMap<>();
         map.put("key-1","video card 1");
